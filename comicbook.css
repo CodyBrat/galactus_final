@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.conteudo {
+    width: 800px;
+    height: 750px;
+    margin-top: 20px;
+    border: 10px solid rgba(103, 123, 135, 0.657);
+    margin-left: 17.5rem;
+    
+}
+
+.carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: smooth;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    padding: 1rem;
+}
+
+.carrousel::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 800px;
+    height: 750px;
+
+    margin-top: -16px;
+
+    scroll-snap-align: start;
+}
